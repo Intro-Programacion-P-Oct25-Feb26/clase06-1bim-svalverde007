@@ -22,32 +22,33 @@ public class Ejemplo011 {
         entrada.useLocale(Locale.US);
         System.out.println("Ingrese el nombre del día de la semana");
         String cadena = entrada.nextLine();
-        cadena = cadena.toLowerCase();
-        switch(cadena){
+        cadena = cadena.toLowerCase(); // toLowerCase sirve para designar 
+        // la variable a minusculas al momento de imprimir
+        switch (cadena) {
             case "lunes":
                 System.out.printf("%s es el primer día "
                         + "de la semana", cadena);
                 break;
-            
+
             case "martes":
                 System.out.printf("%s es el segundo día "
                         + "de la semana", cadena);
                 break;
-            
+
             case "viernes":
                 System.out.printf("%s es el quinto día "
                         + "de la semana", cadena);
                 break;
-            
+
             case "domingo":
                 System.out.printf("%s, es el séptimo día "
                         + "de la semana", cadena);
                 break;
-                
+
             default:
                 System.out.println("ninguna de las anteriores");
                 break;
         }
-        
+
     }
 }
